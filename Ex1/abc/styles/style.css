@@ -1,0 +1,234 @@
+/* reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+body{
+    background-color: #cad3d3;
+
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    
+}
+.col-sm-4{
+    margin-top:180px;
+    width:362px;
+    margin-left:1.2em;
+}
+
+
+
+
+.top_box {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.top_box1 span:first-child {
+    font-size: 32px;
+    color:#3c9ef8;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+.top_box1 span:last-child {
+    font-size: 12px;
+    color:#bfc8cf;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.top_box2 span:first-child {
+    font-size: 32px;
+    color:#d74498;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+.top_box2 span:last-child {
+    font-size: 12px;
+    color:#bfc8cf;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.header_sub{
+    font-size: 12px;
+    color: #a5b5ba;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.top_box3 span:first-child {
+    font-size: 32px;
+    color:#5cb950;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+.top_box3 span:last-child {
+    font-size: 12px;
+    color:#bfc8cf;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    height: 272px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.tour_title {
+    padding: 24px 0;
+    background-color: white;
+}
+.tour_title span:first-child {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: #748590;
+    margin-bottom: 8px;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+.tour_title span:last-child {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #a7b4bf;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.header_title{
+    font-size: 32px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.list {
+    list-style: none;
+}
+
+.list_item:nth-of-type(2n + 1) {
+    background-color: #f4f6f7;
+}
+.list_item:nth-of-type(2n) {
+    background-color: #fff;
+}
+.list_item {
+    height: 50px;
+    color: #5f727f;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.btn_buy {
+    background-color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_buy1:hover {
+    background-color: #2196f7 !important;
+    color:#fff;
+}
+.btn_buy1 {
+    border-color: #2196f7;
+    background-color: white;
+    color: #2196f7;
+    padding: 16px 32px;
+    border: solid 1px #748590;
+    background-color: white;
+}
+.btn_buy2:hover {
+    background-color: #6c136f !important;
+    color:#fff;
+}
+.btn_buy2 {
+    border-color: #6c136f;
+    background-color: white;
+    color: #6c136f;
+    padding: 16px 32px;
+    border: solid 1px #6c136f;
+    background-color: white;
+}
+
+.btn_buy3:hover {
+    background-color: #32ad1e !important;
+    color:#fff;
+}
+.btn_buy3 {
+    border-color: #32ad1e;
+    background-color: white;
+    color: #32ad1e;
+    padding: 16px 32px;
+    border: solid 1px #32ad1e;
+    background-color: white;
+}
+
+.tour__status-tag {
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.new{
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+   }
+.new span {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
