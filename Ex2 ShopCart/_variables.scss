@@ -1,0 +1,60 @@
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1024px; 
+
+$primary-color:#00bcd4;
+$text-color: #5f727f;
+$border-color: #dfe5e8;
+
+$font-montserrat:'Montserrat', sans-serif;
+$font-sourceSansPro: 'Source Sans Pro', sans-serif;
+
+
+@mixin sourceSansPro-light {
+    font: {
+        family: $font-sourceSansPro;
+        weight: 300;
+    }
+}
+@mixin sourceSansPro-regular {
+    font: {
+        family: $font-sourceSansPro;
+        weight: 400;
+    }
+}
+@mixin montserrat-light {
+    font: {
+        family: $font-montserrat;
+        weight: 300;
+    }
+}
+@mixin montserrat-bold {
+    font: {
+        family: $font-montserrat;
+        weight: bold;
+    }
+}
+
+@mixin sourceSansPro3($fontWeight, $fontSize, $textColor) {
+    color: $textColor;
+    font: {
+        family: $font-sourceSansPro;
+        weight: $fontWeight;
+        size: $fontSize;
+    }
+}
+@mixin sourceSansPro2($fontWeight, $fontSize) {
+    font: {
+        family: $font-sourceSansPro;
+        weight: $fontWeight;
+        size: $fontSize;
+    }
+}
+@mixin montserrat2($fontWeight, $fontSize) {
+    font: {
+        family: $font-sourceSansPro;
+        weight: $fontWeight;
+        size: $fontSize;
+    }
+}
+

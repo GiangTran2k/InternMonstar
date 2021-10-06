@@ -1,0 +1,93 @@
+.grid {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.related-products {
+    margin-top: 70px;
+    margin-bottom: 112px;
+    &-title {
+        width: 100%;
+        @include montserrat-light;
+        color: #3c3950;
+        font-size: 3.6rem;
+        line-height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        span {
+            margin: 0;
+        }
+        .line {
+            height: 3px;
+            flex: 1;
+            border: {
+                top: 2px solid $text-color;
+                bottom: 2px solid $text-color;
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 68px;
+        .related-products-item {
+            min-width: 160px;
+            width: 160px;
+            &-img {
+                height: 200px;
+                background-color: #f0f3f2;
+                position: relative;
+                & > * {
+                    border-radius: 50%;
+                    font-size: 1.4rem;
+                    @include montserrat-bold;
+                    color: #ffffff;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .sale-tag {
+                    width: 60px;
+                    height: 60px;
+                    background-color: $primary-color;
+                    right: -20px;
+                    top: 20px;
+                    z-index: 2;
+                }
+                .new-tag {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #393d50;
+                    right: -15px;
+                    top: 68px;
+                    z-index: 1;
+                }
+            }
+            .related-products-item-content {
+                width: 100%;
+                height: 86px;
+                @include sourceSansPro-regular;
+                font-size: 1.6rem;
+                text-transform: capitalize;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $text-color;
+                border-top: none;
+                box-sizing: border-box;
+                .product-name {
+                    color: $text-color;
+                }
+                .product-price {
+                    margin-top: 16px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
