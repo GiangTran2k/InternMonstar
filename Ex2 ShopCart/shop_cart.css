@@ -323,6 +323,75 @@ header .slider .next-btn {
   right: 0;
 }
 
+@media screen and (max-width: 1170px) {
+  .grid {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header .header-top .header-contacts .header-contacts-number {
+    padding-right: 30px;
+  }
+
+  header .header-top .header-contacts .header-contacts-socials {
+    padding: 0 20px;
+  }
+
+  header .header-top .header-contacts .header-contacts-personal {
+    padding: 0 20px;
+  }
+
+  header .header-top .header-contacts .header-contacts-personal li {
+    padding: 0 6px;
+  }
+
+  header .header-bottom .header-navbar .header-logo img {
+    width: 130px;
+  }
+
+  header .header-bottom .header-navbar {
+    height: 70px !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header .header-top .header-contacts .header-contacts-personal :not(:first-child) {
+    display: none !important;
+  }
+
+  header .header-top .header-contacts .header-contact-wishlist {
+    padding: 0 7px;
+  }
+
+  header .header-bottom .header-navbar .navigation .sub {
+    display: none !important;
+  }
+
+  header .header-bottom .header-navbar .navigation {
+    padding-left: 25px;
+  }
+
+  header .slider-content-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+
+  header .slider-content-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header-bottom .header-navbar .header-logo {
+    display: none;
+  }
+
+  header .header-bottom .header-navbar .navigation {
+    padding-left: 0;
+  }
+}
 .container .main {
   padding: 78px 0 100px 0;
 }
@@ -757,8 +826,8 @@ header .slider .next-btn {
 .related-products-title .line {
   height: 3px;
   flex: 1;
-  border-top: 2px solid #dfe5e8;
-  border-bottom: 2px solid #dfe5e8;
+  border-top: 2px solid #f0f3f2;
+  border-bottom: 2px solid #f0f3f2;
 }
 .related-products-content {
   display: flex;
@@ -822,6 +891,33 @@ header .slider .next-btn {
 .related-products-content .related-products-item .related-products-item-content .product-price {
   margin-top: 16px;
   color: #00bcd4;
+}
+
+@media screen and (max-width: 1023px) {
+  .related-products-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .related-products-content {
+    margin-top: 45;
+  }
+
+  .related-products-content .related-products-item {
+    min-width: 150px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .related-products-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .related-products {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=shop_cart.css.map */
