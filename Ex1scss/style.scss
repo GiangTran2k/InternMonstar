@@ -1,0 +1,231 @@
+@import 'variable';
+
+.wrapper{
+    max-width: 1920px;
+    min-height: 1088px;
+    margin: 0 auto;
+    background-color: $bg-color;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 110px;
+    justify-content: space-between;
+    
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    max-width: 362px;
+    position: relative;
+
+
+}
+.header{
+  position: relative;
+  
+  
+}
+.price {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 50%;
+    &__item{
+        font-size: 32px;
+    color: $blue-color;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+  
+  }
+    &__desc{
+        font-size: 16px;
+    color: $gray-lighter-color;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  
+  }
+  }
+  .slider {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        font-size: 32px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        position: absolute;
+        text-transform: uppercase;
+  
+  }
+    &__desc{
+        font-size: 12px;
+        color: $gray-color;
+        font-family: 'Source Sans Pro', sans-serif;
+        position: absolute;
+        padding-top: 58px;
+  
+  }
+  }
+  
+  
+  .subtitle {
+    padding: 24px 0;
+    background-color: white;
+    &__goes{
+      text-align: center;
+      font-size: 20px;
+      color: $gray-lighter-color;
+      margin-bottom: 8px;
+      display: block;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+  
+  }
+    &__desc{
+      text-align: center;
+      font-size: 12px;
+      font-weight: 300;
+      color: $gray-lighter-color;
+      display: block;
+      font-family: 'Source Sans Pro', sans-serif;
+      
+  
+  }
+  }
+  .bottom {
+    background-color: #fff;
+    
+  
+
+  }
+  
+  .list {
+    &__item:nth-of-type(2n + 1) {
+      background-color: #f4f6f7;
+  }
+    
+    &__item{
+      height: 50px;
+      color: $text-color;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  }
+  .btn{
+    background-color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__buy{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      background-color: white;
+      padding: 16px 32px;
+      cursor: pointer;
+      transition: ease-in-out 0.2s;
+      
+    }
+    &__buy--blue{
+      border: 1px solid $blue-color;
+      color: $blue-color;
+  
+    }
+    &__buy--blue:hover{
+      background-color: $blue-color;
+      color: white;
+  
+    }
+    &__buy--pink{
+      border: 1px solid $pink-color;
+      color: $pink-color;
+  
+    }
+    &__buy--pink:hover{
+      background-color: $pink-color;
+      color: white;
+  
+    }
+    &__buy--green{
+      border: 1px solid $green-color;
+      color: $green-color;
+  
+    }
+    &__buy--green:hover{
+      background-color: $green-color;
+      color: white;
+  
+    }
+
+    
+  }
+
+
+  .new{
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    position: absolute;
+    top: -15px;
+    left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    & span{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+
+    }
+  }
+.price--new{
+  background-color: $new-color!important;
+}
+.price__item--pink{
+  color: $pink-color;
+}
+.price__item--green{
+  color: $green-color;
+}
+
+@media screen and (max-width: 1170px) {
+ 
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    justify-content: space-around;
+
+    
+ 
+  }
+}
