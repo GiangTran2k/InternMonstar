@@ -56,7 +56,7 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 
-  //
+  //validate repeat
   if ( cf.value == myInput.value) {
     document.getElementById("register_btn").disabled = false;
     document.getElementById("register_btn").style.backgroundColor = '#04AA6D';
@@ -83,8 +83,45 @@ cf.onkeyup = function(){
   }
 }
 
+
+// validate email
+// When the user clicks on the password field, show the message box
+var myEmail =  document.getElementById("email");
+myEmail.onfocus = function() {
+  document.getElementById("result").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myEmail.onblur = function() {
+  document.getElementById("result").style.display = "none";
+}
+
+function validateEmail(email) {
+  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function validate() {
+  const $result = $("#result");
+  const email = $("#email").val();
+  $result.text("");
+
+  if (validateEmail(email)) {
+    $result.text(email + " is valid :)");
+    $result.css("color", "green");
+  } else {
+    $result.text(email + " is not valid :(");
+    $result.css("color", "red");
+  }
+  return false;
+}
+
+$("#email").on("input", validate);
+
+
 // popup
-function showPopup() {
-  var popup = document.getElementById("register_btn");
-  popup.classList.toggle("show");
+function registerAccess(){
+
+  document.getElementById("popup").style.display="block";
+  setTimeout(function(){ document.getElementById("popup").style.display="none"; }, 3000);
 }

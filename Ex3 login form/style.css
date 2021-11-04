@@ -70,6 +70,10 @@ body {
     text-align: center;
     margin-top: 0px;
   }
+
+  .password{
+    position: relative;
+  }
  
   /* The message box is shown when the user clicks on the password field */
   #message {
@@ -83,6 +87,7 @@ body {
     margin-top: 10px;
     max-width: 1170px;
     text-align: center;
+    position:absolute;
   }
   
   #message p {
@@ -167,4 +172,13 @@ body {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+
+
+#popup{
+  display: none;
+  font-size: 50px;
+  color: green;
+
 }
