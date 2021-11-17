@@ -13,6 +13,7 @@ li {
 }
 
 header {
+    min-width: 540px !important;
     .grid {
         max-width: 1170px;
         width: 100%;
@@ -333,61 +334,29 @@ header {
 
 //responsive
 @media screen and (max-width:1170px) {
-    .grid {
-        max-width: 1024px;
-        width: 100%;
-        margin: 0 auto;
-    }
-    header .header-top .header-contacts .header-contacts-number{
-        padding-right: 30px;
+    header .header-top .header-contacts .header-contacts-personal{
+        padding: 0 15px;
     }
     header .header-top .header-contacts .header-contacts-socials{
-        padding: 0 20px;
+        padding: 0 15px;
     }
-    header .header-top .header-contacts .header-contacts-personal{
-        padding: 0 20px;
+    header .header-bottom .header-navbar .navigation li .menu{
+        display: none;
     }
-    header .header-top .header-contacts .header-contacts-personal li{
-        padding: 0 6px;
-    }
-    ///
-    header .header-bottom .header-navbar .header-logo img {
-        width: 130px;
-    }
-    header .header-bottom .header-navbar{
-        height: 70px!important;
-    }
+
     
 
 }
-@media screen and (max-width:1023px) {
-    header .header-top .header-contacts .header-contacts-personal :not(:first-child){
-            display: none!important;
-   
-    }
-    
-    header .header-top .header-contacts .header-contact-wishlist{
-        padding: 0 7px;
-    }
-    ///
 
-    header .header-bottom .header-navbar .navigation .sub{
-        display: none!important;
+@media screen and (max-width:1023px) {
+    header .header-top .header-contacts .header-contacts-personal{
+        display: none;
     }
-    header .header-bottom .header-navbar .navigation{
-        padding-left: 25px;
+    header .header-top .header-contacts{
+        justify-content: space-between;
     }
-    ///
-    header .slider-content-title {
-        text-transform: uppercase;
-        font-size: 3rem;
-        line-height: 3.2rem;
-    }
-    header .slider-content-img {
-        width: 100px;
-        height: 100px;
-        margin-bottom: 40px;
-    }
+  
+    
 
 
     
@@ -395,12 +364,30 @@ header {
 }
 
 @media screen and (max-width:767px) {
-    header .header-bottom .header-navbar .header-logo{
-        display: none;
+    header .header-top .header-contacts .header-contacts-number{
+        padding-right: 10px;
     }
-    header .header-bottom .header-navbar .navigation{
-        padding-left: 0;
-    } 
-  
+    header .header-top .header-contacts .header-contact-wishlist{
+        line-height: 1.4;
+    }
+    header .header-bottom .header-navbar .header-logo{
+        width: 100px;
+        height: 36px;
+    }
+    
+    header .slider{
+        min-height: 150px;
+    }
+    header .slider-content-title{
+        font-size: 3rem;
+        line-height: 3.4rem;
+
+    }
+    header .slider-content-img{
+        width: 80px;
+        height: 80px;
+    }
 
 }
+
+
