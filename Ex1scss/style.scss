@@ -1,14 +1,13 @@
 @import 'variable';
 
 .wrapper{
-    max-width: 1920px;
-    min-height: 1088px;
     margin: 0 auto;
     background-color: $bg-color;
 }
 .container{
     max-width: 1170px;
     margin: 0 auto;
+    padding-bottom: 200px;
     display: flex;
     padding-top: 110px;
     justify-content: space-between;
@@ -43,19 +42,21 @@
     z-index: 2;
     border-radius: 50%;
     &__item{
-        font-size: 32px;
+    font-size: 32px;
+    @include sourceSansPro4;
     color: $blue-color;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
+    // font-family: "Source Sans Pro", sans-serif;
+    // font-weight: 300;
     display: flex;
     justify-content: center;
   
   }
     &__desc{
-        font-size: 16px;
+    font-size: 16px;
+    @include sourceSansPro4;
     color: $gray-lighter-color;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
+    // font-family: "Source Sans Pro", sans-serif;
+    // font-weight: 400;
     display: flex;
     justify-content: center;
   
@@ -71,8 +72,9 @@
     &__title{
         font-size: 32px;
         color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
+        @include sourceSansPro2;
+        // font-family: 'Montserrat', sans-serif;
+        // font-weight: 200;
         position: absolute;
         text-transform: uppercase;
   
@@ -80,7 +82,8 @@
     &__desc{
         font-size: 12px;
         color: $gray-color;
-        font-family: 'Source Sans Pro', sans-serif;
+        @include sourceSansPro2;
+        // font-family: 'Source Sans Pro', sans-serif;
         position: absolute;
         padding-top: 58px;
   
@@ -97,8 +100,9 @@
       color: $gray-lighter-color;
       margin-bottom: 8px;
       display: block;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 300;
+      @include sourceSansPro3;
+      // font-family: 'Source Sans Pro', sans-serif;
+      // font-weight: 300;
   
   }
     &__desc{
@@ -107,13 +111,14 @@
       font-weight: 300;
       color: $gray-lighter-color;
       display: block;
-      font-family: 'Source Sans Pro', sans-serif;
+      @include sourceSansPro;
+      // font-family: 'Source Sans Pro', sans-serif;
       
   
   }
   }
   .bottom {
-    background-color: #fff;
+    background-color: white;
     
   
 
@@ -121,13 +126,14 @@
   
   .list {
     &__item:nth-of-type(2n + 1) {
-      background-color: #f4f6f7;
+      background-color: $light-color;
   }
     
     &__item{
       height: 50px;
       color: $text-color;
-      font-family: 'Source Sans Pro', sans-serif;
+      @include sourceSansPro;
+      // font-family: 'Source Sans Pro', sans-serif;
       font-weight: 400;
       font-size: 14px;
       display: flex;
@@ -201,7 +207,8 @@
     z-index: 2;
     & span{
     color: white;
-    font-family: 'Source Sans Pro', sans-serif;
+    @include sourceSansPro;
+    // font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
     font-weight: 700;
 

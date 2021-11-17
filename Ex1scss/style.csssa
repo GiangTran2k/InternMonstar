@@ -1,0 +1,18 @@
+/* Error: Undefined variable.
+ *    ,
+ * 13 |         family: $font-sourceSansPro;
+ *    |                 ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   _variable.scss 13:17  sourceSansPro4()
+ *   style.scss 46:5       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 13 \2502          family: $font-sourceSansPro;\d\a    \2502                  ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   _variable.scss 13:17  sourceSansPro4()\a   style.scss 46:5       root stylesheet";
+}

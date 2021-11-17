@@ -1,6 +1,4 @@
 .wrapper {
-  max-width: 1920px;
-  min-height: 1088px;
   margin: 0 auto;
   background-color: #cad3d3;
 }
@@ -8,6 +6,7 @@
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding-bottom: 200px;
   display: flex;
   padding-top: 110px;
   justify-content: space-between;
@@ -41,17 +40,17 @@
 }
 .price__item {
   font-size: 32px;
-  color: #2196f7;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  color: #2196f7;
   display: flex;
   justify-content: center;
 }
 .price__desc {
   font-size: 16px;
-  color: #99a9b5;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
+  color: #99a9b5;
   display: flex;
   justify-content: center;
 }
@@ -65,7 +64,7 @@
 .slider__title {
   font-size: 32px;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   position: absolute;
   text-transform: uppercase;
@@ -74,6 +73,7 @@
   font-size: 12px;
   color: #f4f6f7;
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
   position: absolute;
   padding-top: 58px;
 }
@@ -101,7 +101,7 @@
 }
 
 .bottom {
-  background-color: #fff;
+  background-color: white;
 }
 
 .list__item:nth-of-type(2n + 1) {
